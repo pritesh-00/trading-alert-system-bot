@@ -1,8 +1,15 @@
 # Trading Alert System Bot
 
-Polls crypto (Binance), forex (Twelve Data), and Indian stocks (yfinance),
+Polls crypto (Coinbase), forex (Twelve Data), and Indian stocks (yfinance),
 checks technical signals (RSI, MA crossover, breakout) and price-cross
 alerts, and sends Discord alerts when conditions trigger.
+
+> **Note:** crypto data comes from Coinbase, not Binance. Binance's public
+> API returns HTTP 451 for requests from many US-based cloud provider IPs
+> (including GitHub Actions runners), so it doesn't work for this
+> scheduled-workflow setup. Coinbase's public market-data API has no such
+> restriction. Crypto symbols use Coinbase's hyphenated format, e.g.
+> `BTC-USD` instead of Binance's `BTCUSDT`.
 
 ## Running 24/7 via GitHub Actions (recommended, free)
 
