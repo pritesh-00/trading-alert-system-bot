@@ -1,0 +1,53 @@
+name: Trading Alerts (every 10 minutes)
+
+# Runs main.py --once on a schedule, so the bot effectively runs 24/7
+# without needing a separate always-on server. GitHub spins up a fresh
+# temporary VM, runs the check, then shuts it down.
+#
+# NOTE: GitHub's cron scheduler is best-effort. Under heavy load across
+# GitHub's infrastructure, a run can be delayed by a few minutes — for a
+# "check every 10 min" alert bot, that's generally fine.
+#
+# You can also trigger a run manually from the Actions tab any time
+# (workflow_dispatch), which is handy for testing.
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write   # needed so the workflow can commit state.json back
+
+jobs:
+  run-alerts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Install dependencies
+        working-directory: trading-alerts
+        run: pip install -r requirements.txt
+
+      - name: Run alert check (single pass)
+        working-directory: trading-alerts
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          TWELVEDATA_API_KEY: ${{ secrets.TWELVEDATA_API_KEY }}
+        run: python main.py --once
+
+      - name: Commit updated state.json (if changed)
+        run: |
+          git config user.name "trading-alerts-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add trading-alerts/state.json trading-alerts/config.yaml
+          git diff --quiet --cached || git commit -m "Update alert state [skip ci]"
+          git push
