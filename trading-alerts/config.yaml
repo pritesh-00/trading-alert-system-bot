@@ -1,0 +1,64 @@
+# Secrets (Discord webhook URL, Twelve Data API key) are intentionally
+# left as placeholders here because this repo is PUBLIC. Real values
+# are supplied via environment variables instead:
+#
+#   - DISCORD_WEBHOOK_URL
+#   - TWELVEDATA_API_KEY
+#
+# Locally:        set them in a .env file or your shell before running main.py
+# GitHub Actions: set them as repo Secrets (Settings -> Secrets and variables
+#                 -> Actions -> New repository secret). See README.md.
+#
+# main.py reads these env vars and overrides whatever is below, so the
+# placeholders here are safe to commit.
+discord:
+  webhook_url: PUT_YOUR_DISCORD_WEBHOOK_URL_HERE
+poll_interval_seconds:
+  crypto: 60
+  indian_stocks: 120
+  forex: 900
+twelvedata:
+  api_key: PUT_YOUR_TWELVEDATA_API_KEY_HERE
+crypto:
+  symbols:
+  - BTC-USD
+  - ETH-USD
+forex:
+  symbols:
+  - EUR/USD
+  - GBP/USD
+  - USD/JPY
+indian_stocks:
+  symbols:
+  - RELIANCE.NS
+  - TCS.NS
+  - INFY.NS
+  - HDFCBANK.NS
+technical_signals:
+  rsi:
+    enabled: true
+    period: 14
+    overbought: 70
+    oversold: 30
+  moving_average_crossover:
+    enabled: true
+    fast_period: 9
+    slow_period: 21
+  breakout:
+    enabled: true
+    lookback_candles: 20
+price_alerts:
+- symbol: BTC-USD
+  market: crypto
+  direction: above
+  level: 120000
+  armed: true
+- symbol: RELIANCE.NS
+  market: indian_stocks
+  direction: below
+  level: 1400
+  armed: false
+candle_interval:
+  crypto: 5m
+  forex: 15min
+  indian_stocks: 15m
