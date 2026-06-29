@@ -10,9 +10,10 @@
   "EUR/USD_breakout_up": 1782752143.3868184,
   "BTC-USD_breakout_down": 1782742250.1122193,
   "BTC-USD_rsi_oversold": 1782742851.8124294,
-  "EUR/USD_rsi_overbought": 1782749142.8185499,
+  "EUR/USD_rsi_overbought": 1782753350.861262,
   "ETH-USD_ma_bearish": 1782746742.5026007,
   "BTC-USD_ma_bullish": 1782747339.695262,
   "BTC-USD_breakout_up": 1782753050.4723327,
-  "ETH-USD_breakout_up": 1782751546.4717796
+  "ETH-USD_breakout_up": 1782751546.4717796,
+  "ETH-USD_rsi_overbought": 1782753349.8971388
 }
