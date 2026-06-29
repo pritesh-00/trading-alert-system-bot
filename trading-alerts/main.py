@@ -31,7 +31,7 @@ import os
 
 sys.path.insert(0, os.path.dirname(__file__))
 
-from sources import binance_source, twelvedata_source, yfinance_source
+from sources import coinbase_source, twelvedata_source, yfinance_source
 from utils import indicators, state_manager
 from utils.discord_notifier import send_alert, COLOR_BULLISH, COLOR_BEARISH, COLOR_INFO
 
@@ -222,7 +222,7 @@ def run_crypto_once(cfg: dict):
     interval = cfg["candle_interval"]["crypto"]
     current_prices = {}
     for symbol in cfg["crypto"]["symbols"]:
-        df = binance_source.get_klines(symbol, interval, limit=100)
+        df = coinbase_source.get_klines(symbol, interval, limit=100)
         current_prices[symbol] = df["close"].iloc[-1]
         check_technical_signals(df, symbol, "crypto", webhook_url, cfg)
     check_price_alerts(current_prices, webhook_url, cfg)

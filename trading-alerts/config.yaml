@@ -21,8 +21,8 @@ twelvedata:
   api_key: PUT_YOUR_TWELVEDATA_API_KEY_HERE
 crypto:
   symbols:
-  - BTCUSDT
-  - ETHUSDT
+  - BTC-USD
+  - ETH-USD
 forex:
   symbols:
   - EUR/USD
@@ -48,7 +48,7 @@ technical_signals:
     enabled: true
     lookback_candles: 20
 price_alerts:
-- symbol: BTCUSDT
+- symbol: BTC-USD
   market: crypto
   direction: above
   level: 120000
