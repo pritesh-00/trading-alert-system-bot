@@ -17,7 +17,7 @@
   "ETH-USD_breakout_up": 1782751546.4717796,
   "ETH-USD_rsi_overbought": 1782753349.8971388,
   "BTC-USD_rsi_overbought": 1782753652.6492076,
-  "BTC-USD_ma_bearish": 1782786942.4868925,
+  "BTC-USD_ma_bearish": 1782790542.418664,
   "EUR/USD_ma_bearish": 1782766870.458531,
   "USD/JPY_ma_bearish": 1782768669.798592,
   "GBP/USD_ma_bullish": 1782775873.1505804,
@@ -26,5 +26,5 @@
   "GBP/USD_breakout_down": 1782789941.2692847,
   "USD/JPY_ma_bullish": 1782780351.4124947,
   "GBP/USD_rsi_oversold": 1782780943.6582875,
-  "EUR/USD_rsi_oversold": 1782782147.2748694
+  "EUR/USD_rsi_oversold": 1782790542.9502845
 }
