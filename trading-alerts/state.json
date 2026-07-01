@@ -1,6 +1,6 @@
 {
   "RELIANCE.NS_rsi_oversold": 1782792653.040741,
-  "ETH-USD_ma_bullish": 1782897352.840264,
+  "ETH-USD_ma_bullish": 1782912346.7591176,
   "GBP/USD_ma_bearish": 1782909952.105104,
   "USD/JPY_breakout_up": 1782909952.5479264,
   "GBP/USD_rsi_overbought": 1782831687.3974707,
@@ -12,9 +12,9 @@
   "BTC-USD_rsi_oversold": 1782907857.6516905,
   "EUR/USD_rsi_overbought": 1782831347.9756277,
   "ETH-USD_ma_bearish": 1782901544.2119112,
-  "BTC-USD_ma_bullish": 1782897059.422691,
-  "BTC-USD_breakout_up": 1782896483.749851,
-  "ETH-USD_breakout_up": 1782897059.7104003,
+  "BTC-USD_ma_bullish": 1782912345.7335052,
+  "BTC-USD_breakout_up": 1782912346.2712467,
+  "ETH-USD_breakout_up": 1782912347.0083761,
   "ETH-USD_rsi_overbought": 1782881454.8138142,
   "BTC-USD_rsi_overbought": 1782753652.6492076,
   "BTC-USD_ma_bearish": 1782901543.9687386,
@@ -43,5 +43,5 @@
   "HDFCBANK.NS_ma_bearish": 1782898861.1414218,
   "RELIANCE.NS_breakout_up": 1782879945.0351274,
   "TCS.NS_ma_bullish": 1782884458.5809019,
-  "USD/JPY_breakout_down": 1782890152.5513518
+  "USD/JPY_breakout_down": 1782912348.7320604
 }
