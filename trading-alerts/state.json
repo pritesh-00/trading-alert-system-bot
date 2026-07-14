@@ -34,7 +34,7 @@
   "RELIANCE.NS_breakout_down": 1784000754.4016526,
   "TCS.NS_rsi_oversold": 1783572348.496318,
   "TCS.NS_ma_bearish": 1784014890.838927,
-  "HDFCBANK.NS_breakout_down": 1784000755.380553,
+  "HDFCBANK.NS_breakout_down": 1784020878.7510536,
   "HDFCBANK.NS_ma_bullish": 1783932085.521308,
   "RELIANCE.NS_ma_bullish": 1784006746.580066,
   "EUR/USD_ma_bullish": 1784018756.9963725,
@@ -52,5 +52,5 @@
   "TCS.NS_rsi_overbought": 1784000754.6956558,
   "HDFCBANK.NS_rsi_overbought": 1783403154.3971727,
   "RELIANCE.NS_rsi_overbought": 1784007096.8920748,
-  "HDFCBANK.NS_rsi_oversold": 1784011560.2305973
+  "HDFCBANK.NS_rsi_oversold": 1784020878.559113
 }
