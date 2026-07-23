@@ -31,7 +31,7 @@
   "INFY.NS_ma_bearish": 1784281261.202661,
   "INFY.NS_breakout_down": 1784778361.0047328,
   "TCS.NS_breakout_down": 1784778660.5430484,
-  "RELIANCE.NS_breakout_down": 1784778055.5752907,
+  "RELIANCE.NS_breakout_down": 1784790088.6857893,
   "TCS.NS_rsi_oversold": 1784695852.948757,
   "TCS.NS_ma_bearish": 1784540457.6741776,
   "HDFCBANK.NS_breakout_down": 1784778361.625148,
@@ -52,5 +52,5 @@
   "TCS.NS_rsi_overbought": 1784279759.2794025,
   "HDFCBANK.NS_rsi_overbought": 1784264485.0849981,
   "RELIANCE.NS_rsi_overbought": 1784519152.724388,
-  "HDFCBANK.NS_rsi_oversold": 1784778950.1557486
+  "HDFCBANK.NS_rsi_oversold": 1784790089.8221157
 }
